@@ -13,5 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/cookie', 'CookieController@index')->name('cookie');
+Route::get('/', 'CookieController@index')->name('cookie');
 Route::get('/session', 'SessionController@index')->name('session');
