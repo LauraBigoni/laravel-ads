@@ -1,0 +1,15 @@
+.navbar {
+  height: 100px;
+
+  img {
+    max-width: 60px;
+  }
+  h1 sup {
+    font-size: 18px;
+  }
+  ul li + li:before {
+    content: "|";
+    padding: 0 20px;
+  }
+  
+}
