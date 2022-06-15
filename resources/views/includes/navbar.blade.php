@@ -7,9 +7,12 @@
     </div>
     <div class="nav-links">
       {{-- links --}}
-      <ul class="list-unstyled d-flex mb-0">
-        <li class="font-weight-bold" role="button">Cookie</li>
-        <li class="font-weight-bold" role="button">Session</li>
+      <ul class="list-unstyled d-flex mb-0 align-items-center">
+        <li class="font-weight-bold" role="button"><a class="nav-link" href="{{ route('cookie') }}">Cookie</a>
+        </li>
+        <li>|</li>
+        <li class="font-weight-bold" role="button"><a class="nav-link" href="{{ route('session') }}">Session</a>
+        </li>
       </ul>
     </div>
   </nav>

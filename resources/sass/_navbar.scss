@@ -4,12 +4,17 @@
   img {
     max-width: 60px;
   }
+
   h1 sup {
-    font-size: 18px;
+    font-size: 16px;
   }
-  ul li + li:before {
-    content: "|";
-    padding: 0 20px;
+
+  ul {
+    li {
+      font-size: 18px;
+      a {
+        color: #fff;
+      }
+    }
   }
-  
 }
