@@ -9291,3 +9291,33 @@ h3 {
   color: #fff;
   height: 100vh;
 }
+#app .content {
+  margin-top: 100px;
+}
+#app .content h1 {
+  font-size: 90px;
+}
+#app .content .offer-description {
+  margin: 50px 0;
+}
+#app .content .offer-description :first-child {
+  font-size: 28px;
+}
+#app .content .offer-description :nth-child(2) {
+  font-weight: bold;
+}
+#app .content button {
+  margin: 50px 0;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: rgb(176, 222, 249);
+}
+#app .content button span {
+  color: #fff;
+  font-weight: bold;
+}
+#app .content .t-and-c {
+  font-size: 10px;
+}

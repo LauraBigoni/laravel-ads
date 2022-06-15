@@ -3,5 +3,35 @@
   background-attachment: fixed;
   color: #fff;
   height: 100vh;
-}
 
+  .content {
+    margin-top: 100px;
+    h1 {
+      font-size: 90px;
+    }
+    .offer-description {
+      margin: 50px 0;
+      :first-child {
+        font-size: 28px;
+      }
+      :nth-child(2) {
+        font-weight: bold;
+      }
+    }
+    button {
+      margin: 50px 0;
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      background-color: rgb(176, 222, 249);
+      span {
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+    .t-and-c {
+      font-size: 10px;
+    }
+  }
+}
