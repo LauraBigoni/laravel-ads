@@ -25,7 +25,7 @@
   <title>{{ env('APP_NAME') }}</title>
 </head>
 
-<body id="app">
+<body>
   @include('includes.navbar')
 
   <main class="py-4">

@@ -9,7 +9,6 @@
       <p class="mb-0">Annulla in qualsiasi momento.</p>
     </div>
 
-
     {{-- button piani --}}
     <button>
       <span>VEDI I PIANI</span>

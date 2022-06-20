@@ -9285,28 +9285,28 @@ h3 {
   color: #fff;
 }
 
-#app {
+body {
   background: linear-gradient(rgb(176, 222, 249) 20%, rgb(250, 150, 201));
   background-attachment: fixed;
   color: #fff;
   height: 100vh;
 }
-#app .content {
+body .content {
   margin-top: 100px;
 }
-#app .content h1 {
+body .content h1 {
   font-size: 90px;
 }
-#app .content .offer-description {
+body .content .offer-description {
   margin-top: 50px;
 }
-#app .content .offer-description :first-child {
+body .content .offer-description :first-child {
   font-size: 28px;
 }
-#app .content .offer-description :nth-child(2) {
+body .content .offer-description :nth-child(2) {
   font-weight: bold;
 }
-#app .content button {
+body .content button {
   margin: 50px 0;
   border: none;
   outline: none;
@@ -9314,10 +9314,10 @@ h3 {
   padding: 10px 20px;
   background-color: rgb(176, 222, 249);
 }
-#app .content button span {
+body .content button span {
   color: #fff;
   font-weight: bold;
 }
-#app .content .t-and-c {
+body .content .t-and-c {
   font-size: 10px;
 }
