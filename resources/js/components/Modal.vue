@@ -4,10 +4,13 @@
 			<!-- Logo -->
 			<div
 				id="modal_header"
-				class="logo d-flex align-items-center justify-content-center"
+				class="mb-4 logo d-flex align-items-center justify-content-center"
 			>
 				<img src="/images/spotify-logo.png" alt="Ad Logo" />
 				<h1 class="font-weight-bold d-inline pl-4">Spotify<sup>&reg;</sup></h1>
+
+				<!-- close icon -->
+				<div id="close-modal" @click="closeModal"><span>X</span></div>
 			</div>
 
 			<!-- body content and price -->
@@ -44,6 +47,12 @@
 <script>
 export default {
 	name: "Modal",
+	data() {
+		return {};
+	},
+	methods: {
+		closeModal() {},
+	},
 };
 </script>
 
@@ -63,9 +72,9 @@ export default {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 500px;
+		width: 600px;
 		background: linear-gradient(rgb(74, 189, 255) 10%, rgb(255, 164, 211));
-		border: 5px solid rgb(176, 222, 249);
+		border: 5px solid rgb(201, 235, 255);
 
 		img {
 			max-width: 60px;
@@ -73,6 +82,23 @@ export default {
 
 		h1 sup {
 			font-size: 16px;
+		}
+
+		#close-modal {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			transform: translate(50%, -50%);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 5px 12px;
+			border-radius: 50%;
+			font-size: 16px;
+			font-weight: bold;
+			background-color: white;
+			color: rgb(255, 164, 211);
+			cursor: pointer;
 		}
 
 		h2 {
@@ -93,7 +119,7 @@ export default {
 			outline: none;
 			border-radius: 20px;
 			padding: 10px 20px;
-			background-color: rgb(176, 222, 249);
+			background-color: rgb(74, 189, 255);
 			span {
 				color: #fff;
 				font-weight: bold;

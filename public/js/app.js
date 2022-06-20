@@ -1978,8 +1978,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Modal"
+  name: "Modal",
+  data: function data() {
+    return {};
+  },
+  methods: {
+    closeModal: function closeModal() {}
+  }
 });
 
 /***/ }),
@@ -1996,7 +2005,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "#modal-window-container[data-v-53ab54d2] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 0, 0, 0.4);\n  z-index: 1;\n}\n#modal-window-container #modal-window[data-v-53ab54d2] {\n  padding: 20px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 500px;\n  background: linear-gradient(rgb(74, 189, 255) 10%, rgb(255, 164, 211));\n  border: 5px solid rgb(176, 222, 249);\n}\n#modal-window-container #modal-window img[data-v-53ab54d2] {\n  max-width: 60px;\n}\n#modal-window-container #modal-window h1 sup[data-v-53ab54d2] {\n  font-size: 16px;\n}\n#modal-window-container #modal-window h2[data-v-53ab54d2] {\n  font-size: 50px;\n}\n#modal-window-container #modal-window ul li[data-v-53ab54d2] {\n  font-size: 14px;\n}\n#modal-window-container #modal-window ul li a[data-v-53ab54d2] {\n  color: #fff;\n}\n#modal-window-container #modal-window button[data-v-53ab54d2] {\n  margin: 25px 0;\n  border: none;\n  outline: none;\n  border-radius: 20px;\n  padding: 10px 20px;\n  background-color: rgb(176, 222, 249);\n}\n#modal-window-container #modal-window button span[data-v-53ab54d2] {\n  color: #fff;\n  font-weight: bold;\n}", ""]);
+exports.push([module.i, "#modal-window-container[data-v-53ab54d2] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 0, 0, 0.4);\n  z-index: 1;\n}\n#modal-window-container #modal-window[data-v-53ab54d2] {\n  padding: 20px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 600px;\n  background: linear-gradient(rgb(74, 189, 255) 10%, rgb(255, 164, 211));\n  border: 5px solid rgb(201, 235, 255);\n}\n#modal-window-container #modal-window img[data-v-53ab54d2] {\n  max-width: 60px;\n}\n#modal-window-container #modal-window h1 sup[data-v-53ab54d2] {\n  font-size: 16px;\n}\n#modal-window-container #modal-window #close-modal[data-v-53ab54d2] {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  transform: translate(50%, -50%);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding: 5px 12px;\n  border-radius: 50%;\n  font-size: 16px;\n  font-weight: bold;\n  background-color: white;\n  color: rgb(255, 164, 211);\n  cursor: pointer;\n}\n#modal-window-container #modal-window h2[data-v-53ab54d2] {\n  font-size: 50px;\n}\n#modal-window-container #modal-window ul li[data-v-53ab54d2] {\n  font-size: 14px;\n}\n#modal-window-container #modal-window ul li a[data-v-53ab54d2] {\n  color: #fff;\n}\n#modal-window-container #modal-window button[data-v-53ab54d2] {\n  margin: 25px 0;\n  border: none;\n  outline: none;\n  border-radius: 20px;\n  padding: 10px 20px;\n  background-color: rgb(74, 189, 255);\n}\n#modal-window-container #modal-window button span[data-v-53ab54d2] {\n  color: #fff;\n  font-weight: bold;\n}", ""]);
 
 // exports
 
@@ -20349,76 +20358,92 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { attrs: { id: "modal-window-container" } }, [
+    _c("div", { staticClass: "text-center", attrs: { id: "modal-window" } }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "mb-4 logo d-flex align-items-center justify-content-center",
+          attrs: { id: "modal_header" },
+        },
+        [
+          _c("img", {
+            attrs: { src: "/images/spotify-logo.png", alt: "Ad Logo" },
+          }),
+          _vm._v(" "),
+          _vm._m(0),
+          _vm._v(" "),
+          _c(
+            "div",
+            { attrs: { id: "close-modal" }, on: { click: _vm.closeModal } },
+            [_c("span", [_vm._v("X")])]
+          ),
+        ]
+      ),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _vm._m(2),
+    ]),
+  ])
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "modal-window-container" } }, [
-      _c("div", { staticClass: "text-center", attrs: { id: "modal-window" } }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "logo d-flex align-items-center justify-content-center",
-            attrs: { id: "modal_header" },
-          },
-          [
-            _c("img", {
-              attrs: { src: "/images/spotify-logo.png", alt: "Ad Logo" },
-            }),
-            _vm._v(" "),
-            _c("h1", { staticClass: "font-weight-bold d-inline pl-4" }, [
-              _vm._v("Spotify"),
-              _c("sup", [_vm._v("®")]),
-            ]),
-          ]
-        ),
+    return _c("h1", { staticClass: "font-weight-bold d-inline pl-4" }, [
+      _vm._v("Spotify"),
+      _c("sup", [_vm._v("®")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "modal-body" } }, [
+      _c("div", { attrs: { id: "modal-price" } }, [
+        _c("h2", { staticClass: "mb-0" }, [_vm._v("$7.90")]),
         _vm._v(" "),
-        _c("div", { attrs: { id: "modal-body" } }, [
-          _c("div", { attrs: { id: "modal-price" } }, [
-            _c("h2", { staticClass: "mb-0" }, [_vm._v("$7.90")]),
-            _vm._v(" "),
-            _c("small", [_vm._v("per month")]),
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "text-left mt-4", attrs: { id: "what-includes" } },
-            [
-              _c("h5", [_vm._v("Includes")]),
-              _vm._v(" "),
-              _c("ul", [
-                _c("li", [
-                  _vm._v("\n\t\t\t\t\t\tA Spotify Premium subscription "),
-                  _c("br"),
-                  _vm._v("(Ad free, listen offline)\n\t\t\t\t\t"),
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "No data charges for music listening on Spotify Premium"
-                  ),
-                ]),
-                _vm._v(" "),
-                _c("li", [_c("p", [_vm._v("12-month contract applies")])]),
-              ]),
-            ]
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { attrs: { id: "modal-footer" } }, [
-          _c(
-            "button",
-            { staticClass: "cs-button", attrs: { id: "subscribe-button" } },
-            [_c("span", [_vm._v("Subscribe")])]
-          ),
-          _vm._v(" "),
-          _c("p", [_vm._v("Or $9.90 per month without contract")]),
-        ]),
+        _c("small", [_vm._v("per month")]),
       ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "text-left mt-4", attrs: { id: "what-includes" } },
+        [
+          _c("h5", [_vm._v("Includes")]),
+          _vm._v(" "),
+          _c("ul", [
+            _c("li", [
+              _vm._v("\n\t\t\t\t\t\tA Spotify Premium subscription "),
+              _c("br"),
+              _vm._v("(Ad free, listen offline)\n\t\t\t\t\t"),
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._v("No data charges for music listening on Spotify Premium"),
+            ]),
+            _vm._v(" "),
+            _c("li", [_c("p", [_vm._v("12-month contract applies")])]),
+          ]),
+        ]
+      ),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "modal-footer" } }, [
+      _c(
+        "button",
+        { staticClass: "cs-button", attrs: { id: "subscribe-button" } },
+        [_c("span", [_vm._v("Subscribe")])]
+      ),
+      _vm._v(" "),
+      _c("p", [_vm._v("Or $9.90 per month without contract")]),
     ])
   },
 ]
