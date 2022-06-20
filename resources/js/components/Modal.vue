@@ -51,7 +51,23 @@ export default {
 		return {};
 	},
 	methods: {
-		closeModal() {},
+		closeModal() {
+			const modalWindow = document.getElementById("modal-window-container");
+			modalWindow.style.display = "none";
+		},
+	},
+	mounted() {
+		console.log(document.cookie);
+    console.log(document.cookie.indexOf("modal-shown"));
+
+		const modalWindow = document.getElementById("modal-window-container");
+
+		// Gestisco i cookies
+		if (document.cookie.indexOf("modal-shown") > 0) {
+		} else {
+			document.cookie = "modal-shown=seen";
+			modalWindow.style.display = "block";
+		}
 	},
 };
 </script>
@@ -63,7 +79,7 @@ export default {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 1;
 
 	#modal-window {

@@ -4,6 +4,8 @@
   @include('includes.content')
 
   {{-- Prendo i cookies --}}
-  @include('includes.ads')
-  {{-- <?php echo Cookie::get('laravel_ads_session'); ?> --}}
+  
+  @if (!$visited)
+    @include('includes.ads')
+  @endif
 @endsection

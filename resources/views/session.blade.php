@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-
-@include('includes.content')
-
+  @include('includes.content')
 @endsection

@@ -1987,7 +1987,20 @@ __webpack_require__.r(__webpack_exports__);
     return {};
   },
   methods: {
-    closeModal: function closeModal() {}
+    closeModal: function closeModal() {
+      var modalWindow = document.getElementById("modal-window-container");
+      modalWindow.style.display = "none";
+    }
+  },
+  mounted: function mounted() {
+    console.log(document.cookie);
+    console.log(document.cookie.indexOf("modal-shown"));
+    var modalWindow = document.getElementById("modal-window-container"); // Gestisco i cookies
+
+    if (document.cookie.indexOf("modal-shown") > 0) {} else {
+      document.cookie = "modal-shown=seen";
+      modalWindow.style.display = "block";
+    }
   }
 });
 
@@ -2005,7 +2018,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "#modal-window-container[data-v-53ab54d2] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 0, 0, 0.4);\n  z-index: 1;\n}\n#modal-window-container #modal-window[data-v-53ab54d2] {\n  padding: 20px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 600px;\n  background: linear-gradient(rgb(74, 189, 255) 10%, rgb(255, 164, 211));\n  border: 5px solid rgb(201, 235, 255);\n}\n#modal-window-container #modal-window img[data-v-53ab54d2] {\n  max-width: 60px;\n}\n#modal-window-container #modal-window h1 sup[data-v-53ab54d2] {\n  font-size: 16px;\n}\n#modal-window-container #modal-window #close-modal[data-v-53ab54d2] {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  transform: translate(50%, -50%);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding: 5px 12px;\n  border-radius: 50%;\n  font-size: 16px;\n  font-weight: bold;\n  background-color: white;\n  color: rgb(255, 164, 211);\n  cursor: pointer;\n}\n#modal-window-container #modal-window h2[data-v-53ab54d2] {\n  font-size: 50px;\n}\n#modal-window-container #modal-window ul li[data-v-53ab54d2] {\n  font-size: 14px;\n}\n#modal-window-container #modal-window ul li a[data-v-53ab54d2] {\n  color: #fff;\n}\n#modal-window-container #modal-window button[data-v-53ab54d2] {\n  margin: 25px 0;\n  border: none;\n  outline: none;\n  border-radius: 20px;\n  padding: 10px 20px;\n  background-color: rgb(74, 189, 255);\n}\n#modal-window-container #modal-window button span[data-v-53ab54d2] {\n  color: #fff;\n  font-weight: bold;\n}", ""]);
+exports.push([module.i, "#modal-window-container[data-v-53ab54d2] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0, 0, 0, 0.5);\n  z-index: 1;\n}\n#modal-window-container #modal-window[data-v-53ab54d2] {\n  padding: 20px;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 600px;\n  background: linear-gradient(rgb(74, 189, 255) 10%, rgb(255, 164, 211));\n  border: 5px solid rgb(201, 235, 255);\n}\n#modal-window-container #modal-window img[data-v-53ab54d2] {\n  max-width: 60px;\n}\n#modal-window-container #modal-window h1 sup[data-v-53ab54d2] {\n  font-size: 16px;\n}\n#modal-window-container #modal-window #close-modal[data-v-53ab54d2] {\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  transform: translate(50%, -50%);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding: 5px 12px;\n  border-radius: 50%;\n  font-size: 16px;\n  font-weight: bold;\n  background-color: white;\n  color: rgb(255, 164, 211);\n  cursor: pointer;\n}\n#modal-window-container #modal-window h2[data-v-53ab54d2] {\n  font-size: 50px;\n}\n#modal-window-container #modal-window ul li[data-v-53ab54d2] {\n  font-size: 14px;\n}\n#modal-window-container #modal-window ul li a[data-v-53ab54d2] {\n  color: #fff;\n}\n#modal-window-container #modal-window button[data-v-53ab54d2] {\n  margin: 25px 0;\n  border: none;\n  outline: none;\n  border-radius: 20px;\n  padding: 10px 20px;\n  background-color: rgb(74, 189, 255);\n}\n#modal-window-container #modal-window button span[data-v-53ab54d2] {\n  color: #fff;\n  font-weight: bold;\n}", ""]);
 
 // exports
 
